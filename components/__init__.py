@@ -3,3 +3,5 @@ from .line_chart import line_chart
 from .map_data_spread import map_data
 from .widgets import widgets_display
 from .checkbox import checkbox
+from .layout import layout
+from .show_proggres import show_progress

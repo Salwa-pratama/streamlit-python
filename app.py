@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from components import read_data, line_chart, map_data, widgets_display, checkbox
-
+from components import read_data, line_chart, map_data, widgets_display, checkbox, layout, show_progress
+from advanced import caching
 # First read dataset with streamlit
 df = read_data()
 
@@ -19,5 +19,12 @@ map_data()
 widgets_display()
 
 # checkbox
-
 checkbox(df)
+
+# Layout
+layout()
+# Show proggres
+show_progress()
+
+# Caching
+caching()
