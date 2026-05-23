@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from components import read_data, line_chart, map_data
+from components import read_data, line_chart, map_data, widgets_display, checkbox
 
 # First read dataset with streamlit
 df = read_data()
@@ -15,3 +15,9 @@ line_chart()
 # plot a map
 map_data()
 
+# widgets
+widgets_display()
+
+# checkbox
+
+checkbox(df)
